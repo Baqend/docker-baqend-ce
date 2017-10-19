@@ -1,0 +1,18 @@
+version: '3'
+services:
+  mongo:
+    image: "mongo"
+    command: "--storageEngine wiredTiger"
+    volumes:
+       - data:/data/db
+  orestes:
+    image: "baqend/orestes"
+    ports:
+     - "8080:8080"
+    volumes:
+       - data:/opt/baqend/data
+  node:
+    image: "baqend/node"
+
+volumes:
+  data:
