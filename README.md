@@ -16,7 +16,8 @@ For more information visit the official Docker documentation : https://docs.dock
 2. Copy or checkout the docker-compose.yml from this repository to the directory from which you want to spin up your Baqend server.
 3. Run `docker-compose up -d` to spin up your Baqend Server
 4. Open [http://localhost:8080/dashboard](http://localhost:8080/dashboard) in your browser
-5. Start developing awesome applications
+5. Login with username `root` and password `root` (You can change the password in the upper right corner under *Account*)
+6. Start developing awesome applications
 
 The docker-compose.yml will spin up 3 different containers, that are needed to run your server.
 1. `mongo` as a database for persisting your data
